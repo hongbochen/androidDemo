@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_trace_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+         <View
+            android:id="@+id/v_up_line"
+            android:layout_width="2.5dp"
+            android:layout_height="10dp"
+            android:background="@color/mgrey"
+            android:layout_marginLeft="22dp"></View>
+         
+        <ImageView 
+            android:id="@+id/iv_state"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/circle"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_trace_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_state"
+            android:layout_marginLeft="20dp"
+            android:text="@string/test_trace_info"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+        
+        <LinearLayout 
+            android:id="@+id/ll_trace_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_state"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_trace_info">
+            
+           <TextView 
+            android:id="@+id/tv_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_label"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+           
+            <TextView 
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/test_phone"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/tv_trace_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_state"
+            android:layout_marginLeft="20dp"
+            android:text="@string/test_trace_info"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:layout_below="@id/ll_trace_phone"/>
+        
+       
+        
+    <View
+            android:id="@+id/v_down_line"
+            android:layout_width="2.5dp"
+            android:layout_height="45dp"
+            android:background="@color/mgrey"
+            android:layout_below="@id/iv_state"
+            android:layout_marginLeft="22dp"></View>
+    </RelativeLayout>
+
+</RelativeLayout>
